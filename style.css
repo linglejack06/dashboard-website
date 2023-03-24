@@ -3,7 +3,7 @@
     padding: 0;
 }
 body {
-    font-size: 14px;
+    font-size: 11px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 h1 {
@@ -17,23 +17,48 @@ h3 {
     font-size: 1.1rem;
 }
 input {
-    border-radius: 16px;
+    border-radius: 8px;
+    padding: 8px;
     border: whitesmoke 2px solid;
     background-color: whitesmoke;
     width: 100%;
 }
-.message {
+svg {
+    width: 25px;
+    height: 25px;
+}
+.profile-pic, .notification, .second-profile-pic {
+    width: 40px;
+    height: 40px;
+}
+.main-links, .support-links {
     display: flex;
     flex-direction: column;
+    gap: 4px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.message {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 4px;
 }
 .search-bar {
     flex: 3;
     display: flex;
-    margin: 0px 24px;;
+    margin: 0px 24px;
+    align-items: center;
 }
 .icons {
+    margin-left: 48px;
     flex: 2;
+    gap: 24px;
+    align-items: center;
+}
+.link:hover {
+    color: white;
+    cursor: pointer;
 }
 .card {
     background-color: blue;
@@ -44,6 +69,8 @@ input {
 }
 .link {
     display: flex;
+    align-items: center;
+    gap: 2px;
 }
 .main-links {
     margin-top: 24px;
