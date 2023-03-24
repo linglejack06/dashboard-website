@@ -49,8 +49,11 @@ input {
     margin-top: 24px;
     margin-bottom: 32px;
 }
-.trending-container, .announcemnent-container {
+.trending-container, .announcemnent-container, .project-container {
     padding: 8px;
+}
+.announcement, .card, .profile {
+    border-radius: 8px;
 }
 .container {
     display: grid;
@@ -85,10 +88,10 @@ input {
 }
 .projects {
     grid-column: 1 / 3;
-    height: 95%;
     display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, 200px);
 }
 .card {
     width: 100%;
