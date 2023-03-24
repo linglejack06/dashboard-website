@@ -16,6 +16,25 @@ h2 {
 h3 {
     font-size: 1.1rem;
 }
+input {
+    border-radius: 16px;
+    border: whitesmoke 2px solid;
+    background-color: whitesmoke;
+    width: 100%;
+}
+.message {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.search-bar {
+    flex: 3;
+    display: flex;
+    margin: 0px 24px;;
+}
+.icons {
+    flex: 2;
+}
 .card {
     background-color: blue;
 }
@@ -112,6 +131,26 @@ h3 {
 }
 .navbar {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-right: 24px;
+}
+.welcome {
+    margin-left: 24px;
+}
+button {
+    background-color: cornflowerblue;
+    border-radius: 8px;
+    width: 80px;
+    height: 30px;
+    border: 2px solid cornflowerblue;
+    color: white;
 }
 .icons {
     display: flex;
