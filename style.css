@@ -84,6 +84,11 @@ img {
 .announcement, .card, .profile {
     border-radius: 8px;
 }
+.announcement {
+    background-color: white;
+    padding: 12px;
+    border: 4px solid black;
+}
 .container {
     display: grid;
     grid-template-columns: minmax(150px, 200px) 4fr;
@@ -104,6 +109,9 @@ img {
     gap: 10px;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+}
+.title {
+    text-align: center;
 }
 .main-name {
     grid-column: 1 / 3;
@@ -132,9 +140,6 @@ img {
 .announcements {
     display: grid;
     gap: 10px;
-}
-.announcement {
-    background-color: blueviolet;
 }
 .trending-container {
     grid-column: 2 / 3;
